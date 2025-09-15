@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/DATA-STRUCTURES/data-structures/week7",
-      "program": "d:/DATA-STRUCTURES/data-structures/week7/build/Debug/outDebug",
+      "cwd": "d:/DATA-STRUCTURES/data-structures/week9",
+      "program": "d:/DATA-STRUCTURES/data-structures/week9/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
