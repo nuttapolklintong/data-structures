@@ -30,26 +30,26 @@ class Menu:
         self.stack = Stack()
 
     def menu(self):
-        while True:  # เริ่มลูปเพื่อให้สามารถเลือกเมนูได้เรื่อยๆ
+        while True:
             print("\nPlease select Menu")
             print("Q = Quit , A = Push, D = Pop, M = Peek, S = Size")
             choice = input("input choice: ").strip().upper()
             
             if choice == "Q":
                 print("Bye")
-                break  # ออกจากลูปเมื่อเลือก Q
+                break
             self.check_menu(choice)
             self.display()
 
     def check_menu(self, choice):
         if choice == "A":
-            self.push()  # เรียกใช้เมธอด push
+            self.push()
         elif choice == "D":
-            self.pop()  # เรียกใช้เมธอด pop
+            self.pop()
         elif choice == "M":
-            self.peek()  # เรียกใช้เมธอด peek
+            self.peek()
         elif choice == "S":
-            self.check_size()  # เรียกใช้เมธอด check_size
+            self.check_size()
 
     def push(self):
         item = input("input item to push: ")
@@ -76,7 +76,6 @@ class Menu:
         print("Current Stack:", self.stack)
 
 
-# เรียกใช้งานโปรแกรม
 if __name__ == "__main__":
-    menu = Menu()  # สร้าง object ของคลาส Menu
-    menu.menu()  # เรียกใช้เมนู
+    menu = Menu()
+    menu.menu()
